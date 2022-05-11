@@ -1,0 +1,93 @@
+
+
+/*==============FEATURS PART ENDS===============*/
+#featurs_bg
+{
+     margin-bottom: 500px;
+    padding: 65px 0 45px;
+    .features_heading{
+        margin-bottom: 35px;
+        h3{
+            font-size: 44px;
+            text-transform: capitalize;
+            font-family: 'Water Brush', cursive;
+            color: var(--btn_2_color);
+            position: relative;
+            display: inline-block;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -50%;
+                transform: translate(-50%,-50%);
+                width: 150px;
+                height: 1px;
+                background-color:#b7c5a9;
+               
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -88%;
+                width: 150px;
+                height: 1px;
+                background-color: #b7c5a9;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    /*======PRODUCT IMG START =======*/
+ 
+ .product_item{
+    
+     cursor: pointer;
+     &:hover{
+         img{
+             opacity: 1;
+         }
+     }
+     img{
+         opacity: 0.2;
+         transition: all linear 0.4s;
+     }
+     .first_img{
+         img{
+             width: 100%;
+         }
+     }
+    
+     background: #fcfcfc;
+     position: relative;
+     .product_second_item{
+        position: absolute;
+        top: 36%;
+        left: 9%;
+        height: 100%;
+        width: 80%;
+      }
+      .product_second_item{
+          img{
+              opacity: 1;
+          }
+          .product_text{
+              h3{
+                  font-size: 20px;
+                  font-weight: 400;
+                  text-transform: capitalize;
+                  font-family: var(--main_font);
+                  margin-top: 22px;
+              }
+              span{
+                  font-size: 20px;
+                  font-weight: 400;
+                  text-transform: capitalize;
+                  font-family: var(--para_font);
+                  margin-top: 22px;
+              }
+          }
+      }
+ }
+    /*======PRODUCT IMG START =======*/
+}
+/*==============FEATURS PART START===============*/

@@ -1,0 +1,35 @@
+/*==============ABOUT PART START===============*/
+.about_bg{
+    padding: 100px 0 40px;
+    .about_img{
+        transform: translateX(-85px);
+    }
+    .about_text{
+        padding-top: 135px;
+        h3{
+            font-weight: 400;
+            font-family: 'Water Brush', cursive;
+            font-size: 38px;
+            color: #f3d09f;
+            margin-bottom: 50px;
+        }
+        p{
+            font-family: var(--para_font);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-transform: capitalize;
+            &:last-of-type{
+                margin-top: 30px;
+            }
+        }
+        .about_btn{
+            margin-top: 30px;
+            .button{
+                background-color: #f3d09f;
+            }
+        }
+
+    }
+}
+/*==============ABOUT PART ENDS===============*/

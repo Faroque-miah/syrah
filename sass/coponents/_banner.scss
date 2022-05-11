@@ -1,0 +1,90 @@
+
+/*==============BANNER PART START===============*/
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    .navbar-nav{
+        .nav-item{
+            margin-left: 55px;
+            .nav-link{
+                padding: 0;
+                margin: 0 ;
+                font-family: var(--main_font);
+                font-size: 20px;
+                line-height: 22px;
+                color: var(--white);
+                font-weight: 400;
+            }
+        }
+    }
+}
+#banner_bg{
+    position: relative;
+    padding: 210px 0 0;
+    background-color: var(--bg_color); 
+   
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../images/banner_lota.png);
+        background-repeat: no-repeat;
+        background-position:right top;
+         height: 100%;
+         width: 100%;
+       
+    }
+    .banner_text{
+        h4{
+            font-weight: 400;
+            font-family: 'Water Brush', cursive;
+            color: var(--white);
+             transform: translateY(20px);
+        }
+        h3{
+            font-weight: 400;
+            font-size: 99px;
+            color: var(--white);
+            text-transform: var(--para_font);
+            font-family: var(--main_font);
+        }
+        span{
+            font-size: 16px;
+            color: var(--white);
+            letter-spacing: 3px;
+            font-weight: 400;
+            font-family: var(--para_font);
+            margin: 20px 0;
+            display: inline-block;
+        }
+        p{
+            font-size: 18px;
+            color: var(--white);
+            letter-spacing: 2px;
+            font-weight: 400;
+            font-family: var(--para_font);
+            margin: 20px 0;
+            display: inline-block;
+            line-height: 24px;
+        }
+    }
+    .banner_btn{
+        .button{
+            background-color: var(--btn_color);
+            color: var(--white);
+            transition: all linear 0.4s;
+            &:hover{
+                background: transparent;
+            }
+            
+        }
+    }
+    .banner_img{
+        transform: translateY(70px) translateX(20px);
+    }
+}
+/*==============BANNER PART ENDS===============*/

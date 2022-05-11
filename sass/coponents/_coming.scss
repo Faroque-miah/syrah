@@ -1,0 +1,106 @@
+/*==============UP COMING PART START===============*/
+#events_bg{
+    padding: 70px 0;
+    position: relative;
+    z-index: 99;
+    &::after{
+        content: '';
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        background: url(../images/up_coming.png) no-repeat center / cover;
+         z-index: -99;
+    }
+    .events_text{
+        h3{
+            font-size: 44px;
+            text-transform: capitalize;
+            font-family: 'Water Brush', cursive;
+            color: var(--btn_2_color);
+            position: relative;
+            display: inline-block;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -50%;
+                transform: translate(-50%,-50%);
+                width: 150px;
+                height: 1px;
+                background-color:#b7c5a9;
+               
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -88%;
+                width: 150px;
+                height: 1px;
+                background-color: #b7c5a9;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+     .envents_img{
+         padding-bottom: 25px;
+         .events_time{ 
+             margin-top: -70px;
+             text-align: center;
+             .day{
+                 font-size: 80px;
+                 font-weight: 400;
+                 font-family: var(--main_font);
+                 color: #444444;
+                 display: block;
+             }
+             .month{
+                 font-size: 22px;
+                 font-weight: 400;
+                 text-transform: capitalize;
+                 color: var(--btn_2_color);
+                 font-family: 'Water Brush', cursive;
+                 position: relative;
+                 display: inline-block;
+                 padding-bottom: 15px;
+                 &::before{
+                     content: '';
+                     position: absolute;
+                     left: 0;
+                     bottom: 0;
+                     height: 1px;
+                     width: 50px;
+                     background: var(--btn_2_color);
+                    margin-bottom: 10px;
+                    border-radius: 3px;
+                 }
+             }
+             h5{
+                font-size: 20px;
+                font-weight: 400;
+                text-transform: capitalize;
+                font-family: var(--other_font);
+                
+               }
+             .spcial_day{
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: capitalize;
+                 font-family: var(--main_font);
+                margin: 10px 0;
+               }
+             .price{
+                font-size: 26px;
+                font-weight: 400;
+                text-transform: capitalize;
+                 font-family: var(--main_font);
+                margin: 10px 0;
+                padding-bottom: 15px;
+                display: inline-block;
+               }
+         }
+     }
+}
+/*==============UP COMING PART ENDS===============*/

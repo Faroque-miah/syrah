@@ -1,0 +1,93 @@
+/*==============FEEDBACK PART START===============*/
+#feed_bg{
+    padding: 60px 0;
+    background: #efeeee;
+    position: relative;
+    z-index: 999;
+    &::after{
+        content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 25%;
+      background: rgba(228, 210, 185, 0.739) url(../images/feedback_side_img.png) no-repeat;
+      z-index: -9;
+     background-position: right bottom;
+     background-repeat: no-repeat;
+     background-position-x: right;
+     background-size: 73% 100%;
+    }
+    .feed_text{
+    
+            h3{
+                margin-top: 100px;
+                font-size: 44px;
+                font-weight: 400;
+                color:#b7c5a9;
+                font-family: 'Water Brush', cursive;
+                text-transform: capitalize;
+                position: relative;
+                display: inline-block;
+                margin-bottom: 50px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    right: -82%;
+                    height: 1px;
+                    width: 100px;
+                    background-color: #b7c5a9;
+                    top:50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: capitalize;
+                line-height: 26px;
+                color: #444444;
+                font-family: var(--para_font);
+            }
+    }
+
+
+ .feed_item{
+     margin-right: 30px;
+     &:last-of-type{
+         margin-right: 0 !important;
+     }
+ }
+    .card {
+        .card-body{
+            .card-title{
+                font-size: 20px;
+                font-family: var(--main_font);
+                color: var(--bg_color);
+                text-transform: capitalize;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 8px;
+            }
+            .card-text{
+                font-size: 18px;
+                font-family: var(--para_font);
+                color: var(--bg_color);
+                text-transform: capitalize;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 8px;
+            }
+            a{
+                font-size: 18px;
+                font-family: var(--para_font);
+                color: var(--bg_color);
+                text-transform: capitalize;
+                font-weight: 400;
+                line-height: 24px;
+                 text-decoration: line-through;
+            }
+        }
+    }
+}
+/*==============FEEDBACK PART ENDS===============*/

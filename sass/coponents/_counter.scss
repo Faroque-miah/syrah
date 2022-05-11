@@ -1,0 +1,72 @@
+
+/*==============COUNTERUP PART START===============*/
+#counter_bg{
+    padding: 100px 0;
+    background-color: #fcfcfc;
+    .counterup_text{
+        h3{
+            font-size: 44px;
+            font-weight: 400;
+            color:#b7c5a9;
+            font-family: 'Water Brush', cursive;
+            text-transform: capitalize;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 50px;
+            &::before{
+                content: '';
+                position: absolute;
+                right: -82%;
+                height: 1px;
+                width: 150px;
+                background-color: #b7c5a9;
+                top:50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 26px;
+            color: #444444;
+            font-family: var(--para_font);
+            &:first-of-type{
+                margin-bottom: 40px;
+            }
+        }
+        .counter_up_start{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 80px;
+            li{
+                width: 50%;
+                background-color: #fff;
+                border-bottom: 1px solid #eeeeee;
+                border-right: 1px solid #eeeeee;
+                span{
+                    font-size: 30px;
+                    font-family: var(--main_font);
+                    display:inline-block;
+                }
+                p{
+                    font-size: 18px;
+                    font-family: var(--para_font);
+                    color: var(--para_color);
+                    font-weight:700;
+                }
+                &:last-of-type{
+                    border-bottom: none;
+                }
+                &:nth-child(3n){
+                    border-bottom: none;
+                }
+            }
+        }
+        
+    }
+ 
+}
+/*==============COUNTERUP PART ENDS===============*/

@@ -1,0 +1,156 @@
+
+/*==============BANNER PART START===============*/
+#footer_bg{
+    padding: 60px 0 0;
+    background: #1d2228;
+    position: relative;
+    z-index: 9999;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right:0;
+        height: 100%;
+        width: 100%;
+        background: url(../images/banner_lota.png) no-repeat;
+        background-position: right top;
+        background-size: 50%;
+        z-index: -100;
+    }
+    .footer_img{
+        margin-bottom: 30px;   
+    }
+    .border_top{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 52px;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            border-top: 1px solid #181c21;
+            z-index: -999999999999999;
+        }
+    }
+    .footer_icon{
+        border-bottom: 1px solid #181c21;
+        padding-bottom: 20px;
+       .social{
+         i{
+            display: inline-block;
+            color: white;
+            font-size: 22px;
+            line-height: 50px;
+            width: 50px;
+            background-color: #e3d1b8;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 20px;
+         }
+       }
+        li{
+            .number{
+                color: var(--white);
+                display: block;
+                font-family: var(--main_font);
+                color: var(--white);
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+       
+    }
+    .footer_nav{
+        li{
+            a{
+                font-size: 18px;
+                font-weight: 400;
+                font-family: var(--para_font);
+                text-transform: capitalize;
+                color: var(--white) !important;
+            }
+        }
+    }
+    .footer_form{
+        input{
+            background: transparent;
+            color: #444444;
+            padding-left: 20px;
+            border: 1px solid #444444;
+            font-size: 16px;
+            font-family: var(--para_font);
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .button{
+            background: #e3d1b8;
+            color: var(--white);
+            margin-left: -50px;
+            &::after{
+                display: none;
+            }
+        }
+    }
+ .copy_rite{
+     margin-top: 20px;
+     border-top: 1px solid  #181c1c;
+     p{
+         line-height: 70px;
+         font-family: var(--main_font);
+         font-weight: 400;
+         text-transform: capitalize;
+         letter-spacing: 02px;
+         cursor: pointer;
+     }
+ } 
+.footer_last_icon{
+    li{
+        a{
+            display: inline-block;
+            i{
+               font-size: 18px;
+               color: var(--white);
+               font-weight: 400;
+               width: 70px;
+               border: 1px solid #181c1c ;
+               height: 100%;
+               line-height: 70px;
+               text-align: center;
+               
+               transition: all linear 0.4;
+               &:hover{
+                   background: #e3d1b8;
+                   color: #000;
+               }
+            }
+        }
+    }
+}
+ 
+}
+
+ 
+// .footer_last_icon{
+//     li{
+//         a{
+//             i{
+//                 cursor: pointer;
+//                 font-size: 18px;
+//                 font-weight: 400;
+//                 width: 50px;
+//                border: 1px solid #181c1c ;
+//                 display: inline-block;
+//                 height: 100%;
+//                 color: var(--white);
+//                 line-height: 70px;
+//                text-align: center;
+//                transition: all linear 0.s;
+              
+//             }
+         
+           
+//         }
+//     }
+// }
+/*==============BANNER PART ENDS===============*/

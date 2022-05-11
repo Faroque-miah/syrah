@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+:root{
+    --bg_color:#1d2228;
+    --white:#fff;
+    --para_color:#c6c8c9;
+    --btn_color:#b7c5a9;
+    --btn_2_color:#e4d2b9;
+    --about_para:#737373;
+    --para_font:'Bellefair', serif;
+    --main_font:'Jost', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+a,a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+    line-height: 0.8;
+}
+.button{
+    width: 166px;
+    line-height: 57px;
+    display: inline-block;
+    font-family: var(--main_font);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+   &::after{
+       content: '';
+       position: absolute;
+       right: -22%;
+       top:52%;
+       width: 60px;
+       height: 1px;
+       background-color: #737373;
+       z-index: -9;
+   }
+}
+            //   common css ends 
